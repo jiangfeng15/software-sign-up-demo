@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+	<Window size="420,220" caption="0,0,0,35" roundcorner="5,5" mininfo="400,200" maxinfo="420,220">
+		<Font shared="true" id="0" name="隶书" size="12" bold="true"/>
+		<Font shared="true" id="1" name="隶书" size="13" bold="true"/>
+		<Font shared="true" id="2" name="隶书" size="14" bold="true"/>
+		<Font shared="true" id="3" name="华文新魏" size="12" bold="true"/>
+		<Font shared="true" id="4" name="宋体" size="12" bold="true"/>
+		<Font shared="true" id="5" name="华文新魏" size="12" bold="true"/>
+		<Font shared="true" id="6" name="微软雅黑" size="13" bold="true"/>
+		<Font shared="true" id="7" name="微软雅黑" size="13" bold="true"/>
+		<Font shared="true" id="8" name="微软雅黑" size="12" bold="true"/>
+		<VerticalLayout bkcolor="#FFE9E9FF">
+			<HorizontalLayout height="35" bkcolor="#FF5091FF">
+				<HorizontalLayout width="40">
+					<VerticalLayout>
+						<Control height="2"/>
+						<HorizontalLayout >
+							<Control width="2"/>
+							<HorizontalLayout height="32" width="32" bkimage="file='icologo.png' corner='4,4,4,4'" roundcorner="4,4"/>	
+							<Control height="2"/>
+						</HorizontalLayout>
+						<Control height="2"/>
+					</VerticalLayout>
+				</HorizontalLayout>
+				<HorizontalLayout>
+					<Label text="软件注册码获取工具V1.0" font="7"/>
+				</HorizontalLayout>
+				<HorizontalLayout width="95">
+					<Button name="minbtn" tooltip="最小化" float="true" pos="0,0,0,0" width="28" height="20" normalimage="MinBtn_Normal.png" hotimage="MinBtn_Hot.png" pushedimage="MinBtn_Down.png"/>
+					<Button name="maxbtn" tooltip="最大化" float="true" pos="30,0,0,0" width="28" height="20" normalimage="MaxBtn_Normal.png" hotimage="MaxBtn_Hot.png" pushedimage="MaxBtn_Down.png"/>
+					<Button name="restorebtn" visible="false" tooltip="还原" float="true" pos="30,0,0,0" width="28" height="20" normalimage="RestoreBtn_Normal.png" hotimage="RestoreBtn_Hot.png" pushedimage="RestoreBtn_Down.png"/>
+					<Button name="closebtn" tooltip="关闭" float="true" pos="60,0,0,0" width="28" height="20" normalimage="CloseBtn_Normal.png" hotimage="CloseBtn_Hot.png" pushedimage="CloseBtn_Down.png"/>
+				</HorizontalLayout>
+			</HorizontalLayout>
+			<HorizontalLayout bkcolor="#FFC4E8E8" inset="5, 0, 5, 0" bordersize="5,0,5,0" bordercolor="#FFA6CAF0">
+				<VerticalLayout >
+					<Control height="10"/>
+					<HorizontalLayout >
+						<VerticalLayout>
+							<Control />
+							<HorizontalLayout height="26">
+								<Control width="10"/>
+								<Label name="labelname" text="用户名:" width="50" font="6"/>
+								<Control width="5"/>
+								<Edit name="editname"  tooltip="用户名" font="8" textpadding="5,2,0,0"/>
+								<Control width="10"/>
+								<Button name="btnregister" text="生成注册码" width="80" font="6" normalimage="button_nor.png" pushedimage="button_down.png" hotimage="button_over.png" disabledimage="button_disabled.png"/>
+								<Control width="10"/>
+							</HorizontalLayout>
+							<Control />
+						</VerticalLayout>
+					</HorizontalLayout>
+					<HorizontalLayout>
+						<VerticalLayout>
+							<Control />
+							<HorizontalLayout height="26">
+								<Control width="10"/>
+								<Label name="lableregcode" text="注册码:" width="50" font="6" />
+								<Control width="5"/>
+								<Edit name="editcode1" align="center" font="8"/>
+								<Control width="4" />
+								<VerticalLayout width="5">
+									<Control />
+									<HorizontalLayout height="1" bordersize="1,1,1,1" bordercolor="#FF000000"/>
+									<Control />
+								</VerticalLayout>
+								<Control width="4" />
+								<Edit name="editcode2" align="center" font="8"/>
+								<Control width="4" />
+								<VerticalLayout width="5">
+									<Control />
+									<HorizontalLayout height="1" bordersize="1,1,1,1" bordercolor="#FF000000"/>
+									<Control />
+								</VerticalLayout>
+								<Control width="4" />
+								<Edit name="editcode3" align="center" font="8"/>
+								<Control width="4" />
+								<VerticalLayout width="5">
+									<Control />
+									<HorizontalLayout height="1" bordersize="1,1,1,1" bordercolor="#FF000000"/>
+									<Control />
+								</VerticalLayout>
+								<Control width="4" />
+								<Edit name="editcode4" align="center" font="8"/>
+								<Control width="10"/>
+							</HorizontalLayout>
+							<Control />
+						</VerticalLayout>
+					</HorizontalLayout>
+					<HorizontalLayout height="40">
+						<VerticalLayout>
+							<Control />
+							<HorizontalLayout height="26">
+								<Control width="10"/>
+								<Label name="labeltip" text="提示信息:" width="60" font="6"/>
+								<Control width="5"/>
+								<Label name="labelinfo" font="8" textpadding="2,2,0,0" />
+								<Control width="10"/>
+							</HorizontalLayout>
+							<Control />
+						</VerticalLayout>
+					</HorizontalLayout>
+				</VerticalLayout>
+			</HorizontalLayout>	
+			<HorizontalLayout height="26" bkcolor="#FF5091FF" >
+				<Control width="10" />
+				<Label name="tabLabelinfo" text="Designed by Jiang yingfeng, used for SoftWare Regester!" font="5"/>
+			</HorizontalLayout>		
+		</VerticalLayout >
+	</Window>
